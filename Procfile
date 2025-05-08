@@ -1,2 +1,2 @@
-web: python -m MrSSk
+web: python -m MrSSK
  
