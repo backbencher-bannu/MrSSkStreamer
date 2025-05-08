@@ -5,9 +5,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'MrSSKBot')
-API_ID = int(environ.get('API_ID', '27631093'))
-API_HASH = environ.get('API_HASH', '57a1f7446f59248f957cbe59b76cd206')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '26339634'))
+API_HASH = environ.get('API_HASH', 'e0318ca1a4652f9348844203de8f491b')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7361998653:AAHsfQxiOxEpvf7B9ClRCA97tFJs9RecMto")
 
 # Bot settings
 PORT = environ.get("PORT", "8080")
@@ -20,15 +20,15 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://MrSSk-streaming.koyeb.app/")
+URL = environ.get("URL", "")
 
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002275050531'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6306607988').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://projectstreamer:projectstreamer@cluster0.ywxc4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "MrSSkStreamer")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://harishkumargorinta:P6ak9kZKvx33Jx3@movies24.ng58m.mongodb.net/?retryWrites=true&w=majority&appName=Movies24")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Movies24")
 
 # Shortlink Info
 SHORTLINK = bool(environ.get('SHORTLINK', False)) # Set True Or False
